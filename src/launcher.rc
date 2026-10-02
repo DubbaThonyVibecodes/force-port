@@ -1,0 +1,21 @@
+// Resources compiled into portrebind.exe: the "pick an address" dialog and
+// the manifest. Sizes are in dialog units, which scale with the font.
+#include <windows.h>
+#include "resource.h"
+
+// Resource type 24 is RT_MANIFEST, ID 1 is "the manifest of this exe".
+1 24 "launcher.manifest"
+
+IDD_PICK DIALOGEX 0, 0, 280, 96
+STYLE DS_MODALFRAME | DS_CENTER | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "portrebind"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT           "Network interface the game should use:", -1, 8, 8, 264, 10
+    COMBOBOX        IDC_IP, 8, 20, 264, 120, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    AUTOCHECKBOX    "&Don't show this again (hold Shift while starting to get it back)", IDC_DONT_ASK, 8, 42, 264, 10
+    AUTOCHECKBOX    "Write a &log file (portrebind.log)", IDC_LOG, 8, 56, 264, 10
+    DEFPUSHBUTTON   "Start", IDOK, 166, 74, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 222, 74, 50, 14
+END

@@ -1,0 +1,3 @@
+# build output; binaries are published as GitHub releases
+/dist/
+/build/
