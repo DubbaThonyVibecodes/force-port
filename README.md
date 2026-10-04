@@ -1,4 +1,4 @@
-# portrebind
+# Force port on program utility
 
 Forces a Windows game onto the network interface you choose. Written for
 Command & Conquer 3: Tiberium Wars, which ignores its own "IP address" setting
@@ -9,6 +9,11 @@ game and corrects the game's network calls as they happen.
 
 You may try to use it with other games that suffer from similar networking issues.
 Be warned, if any anticheat is present it will likely detect injected DLL.
+
+## Download
+
+Head to github releases section and download newest release .zip file containing 
+exe, injected dll and ini file. [1.0.0](https://github.com/DubbaThonyVibecodes/force-port/releases/download/1.0.0/portrebind.zip)
 
 ## Install
 
